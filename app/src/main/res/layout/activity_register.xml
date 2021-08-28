@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F6CD"
+    tools:context=".Register">
+
+
+    <EditText
+        android:id="@+id/IdEditTextNameRegs"
+        android:layout_width="335dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/ic_kkk"
+        android:hint=" Full Name"
+        android:background="@drawable/editbac"
+        android:textColorHint="#9C8E8D"
+        app:layout_constraintBottom_toTopOf="@+id/IdEditTxtEmailRegs"
+        app:layout_constraintStart_toStartOf="@+id/IdEditTxtEmailRegs" />
+
+    <EditText
+        android:id="@+id/IdEditTxtEmailRegs"
+        android:layout_width="335dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/editbac"
+        android:ems="10"
+        android:hint="  Email"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/ic_email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#9C8E8D"
+        app:layout_constraintBottom_toTopOf="@+id/IdEditTextPasswordRegs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/IdEditTextPasswordRegs"
+        android:layout_width="335dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:hint="  Password"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/ic_key"
+        android:inputType="numberPassword|textPassword"
+        android:background="@drawable/editbac"
+        android:textColorHint="#9C8E8D"
+        app:layout_constraintBottom_toTopOf="@+id/IdBtnRegisterUser"
+        app:layout_constraintStart_toStartOf="@+id/IdEditTxtEmailRegs" />
+
+    <Button
+        android:id="@+id/IdBtnRegisterUser"
+        android:layout_width="335dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/btnbac"
+        android:onClick="DoRegisterUser"
+        android:text="@string/TextRegister"
+        android:fontFamily="@font/allerta"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/IdEditTextPasswordRegs" />
+
+    <ProgressBar
+        android:id="@+id/RegisterProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="142dp"
+        android:layout_height="125dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.449" />
+
+    <ImageView
+        android:id="@+id/IdRegisterLogo"
+        android:layout_width="271dp"
+        android:layout_height="162dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_fast_food" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/amiko_bold"
+        android:text="SIGN UP FOR FREE"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.554"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IdRegisterLogo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

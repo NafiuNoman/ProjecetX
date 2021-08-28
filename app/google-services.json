@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "149187000849",
+    "firebase_url": "https://robotechvalley-c4643-default-rtdb.firebaseio.com",
+    "project_id": "robotechvalley-c4643",
+    "storage_bucket": "robotechvalley-c4643.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149187000849:android:e5a2b65008205aab4ecfb0",
+        "android_client_info": {
+          "package_name": "com.example.projectx_foodmania"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149187000849-4c2aaq4e5n59b57v8lu1f4bdti414glj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbkcLvFZXlj-pd-eZSQQDWGQYUL3k1xto"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149187000849-4c2aaq4e5n59b57v8lu1f4bdti414glj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149187000849:android:7669abb3c2672b014ecfb0",
+        "android_client_info": {
+          "package_name": "com.example.robotechvalley"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149187000849-4c2aaq4e5n59b57v8lu1f4bdti414glj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbkcLvFZXlj-pd-eZSQQDWGQYUL3k1xto"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149187000849-4c2aaq4e5n59b57v8lu1f4bdti414glj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

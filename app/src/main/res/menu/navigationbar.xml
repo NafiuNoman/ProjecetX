@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <item android:title=" USER ">
+
+        <menu>
+
+            <item
+                android:id="@+id/Favourite"
+                android:icon="@drawable/ic_favourites"
+                android:title="Your Favourite"/>
+
+            <item
+                android:id="@+id/History"
+                android:icon="@drawable/ic_histroy"
+                android:title="History"/>
+
+            <item
+                android:id="@+id/Location"
+                android:icon="@drawable/ic_placeholder"
+                android:title="Location"/>
+
+            <item
+                android:id="@+id/Offer"
+                android:icon="@drawable/ic_offer"
+                android:title="Offer"/>
+
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_logout"
+                android:title="LOGOUT"
+                />
+
+        </menu>
+    </item>
+
+</menu>

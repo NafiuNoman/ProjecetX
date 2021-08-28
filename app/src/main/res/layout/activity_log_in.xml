@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F6CD"
+    tools:context=".LogIn">
+
+
+    <EditText
+
+        android:id="@+id/IdEditTxtEmailLogIn"
+        android:layout_width="335dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="256dp"
+        android:background="@drawable/editbac"
+        android:drawableLeft="@drawable/ic_kkk"
+        android:ems="10"
+        android:hint=" Full Name"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/IdEditTxtPasswordLogIn"
+        android:layout_width="335dp"
+        android:layout_height="59dp"
+
+        android:layout_marginTop="90dp"
+        android:background="@drawable/editbac"
+        android:drawableLeft="@drawable/ic_key"
+
+
+        android:ems="10"
+        android:hint="  Password"
+        android:inputType="numberPassword"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IdEditTxtEmailLogIn" />
+
+    <Button
+        android:id="@+id/IdBtnLogIn"
+        style="@style/Theme.ProjectX_FoodMania"
+        android:layout_width="335dp"
+
+        android:layout_height="59dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btnbac"
+
+        android:fontFamily="@font/allerta"
+
+        android:onClick="logInWork"
+        android:text="@string/TextLogin"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IdEditTxtPasswordLogIn" />
+
+    <TextView
+        android:id="@+id/IdTxtRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="btnRegister"
+        android:text="@string/TextRegister"
+        android:textColor="#538A13"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/IdTxtForgetPassword"
+        app:layout_constraintTop_toBottomOf="@+id/IdBtnLogIn" />
+
+    <TextView
+        android:id="@+id/IdTxtForgetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TextForgetPassword"
+        android:textColor="#538A13"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/IdTxtRegistration"
+        app:layout_constraintEnd_toStartOf="@+id/IdTxtRegistration"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="64dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/TextEmail"
+        android:textColor="#3F51B5"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/IdEditTxtEmailLogIn"
+        app:layout_constraintStart_toStartOf="@+id/IdEditTxtEmailLogIn" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/TextPassword"
+        android:textColor="#3F51B5"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/IdEditTxtPasswordLogIn"
+        app:layout_constraintStart_toStartOf="@+id/IdEditTxtPasswordLogIn" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="232dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_fast_food" />
+
+    <ProgressBar
+        android:id="@+id/LogInprogressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="89dp"
+        android:layout_height="86dp"
+        android:visibility="gone"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
